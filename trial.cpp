@@ -3,11 +3,11 @@ using namespace std;
 int main(){
     int a;
     a=12;
-    cout<<"size o int"<<sizeof(a)<<endl;
+    cout<<"size of int"<<sizeof(a)<<endl;
     float b;
-    cout<<"size o int"<<sizeof(b)<<endl;
+    cout<<"size of int"<<sizeof(b)<<endl;
     char c;
-    cout<<"size o int"<<sizeof(c)<<endl;
+    cout<<"size of int"<<sizeof(c)<<endl;
     bool d;
-    cout<<"size o int"<<sizeof(d)<<endl;
+    cout<<"size of int"<<sizeof(d)<<endl;
 }
