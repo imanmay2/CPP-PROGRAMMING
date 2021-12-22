@@ -1,3 +1,4 @@
+///accept temperature in celcius and convert it into farenheit..///
 #include<iostream>
 using namespace std;
 int main()

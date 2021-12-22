@@ -1,3 +1,4 @@
+///Genrate a multiplication table using for loop...///
 #include <iostream>
 using namespace std;
 int main()

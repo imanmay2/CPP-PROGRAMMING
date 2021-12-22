@@ -1,3 +1,4 @@
+///accept a,b and c and display the eaution of a line///
 #include<iostream>
 using namespace std;
 int main()

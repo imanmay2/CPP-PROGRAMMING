@@ -1,9 +1,10 @@
+///program to print the distance between two points using distance formula/// 
 #include<iostream>
 #include<math.h>
 using namespace std;
 int main()
 {
-    double D,x2,x1,y2,y2,x,y;
+    double D,x2,x1,y2,y1,x,y;
     cout<<"Enter the coordinates of x";
     cin>>x2>>x1;
     cout<<"Enter the coordinates of y";
