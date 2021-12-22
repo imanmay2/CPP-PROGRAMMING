@@ -1,3 +1,4 @@
+///accept three sides of triangle and display the area of a triangle///
 #include <iostream>
 #include <math.h>
 using namespace std;
