@@ -4,11 +4,11 @@ int main()
 {
     float num,deci;
     int x;
-    printf("Enter the number you want to enter");
-    scanf("%f",&num);
+    cout<<"Enter the number you want to enter";
+    cin>>num;
     x=num/1;
     deci=num-x;
-    printf("Integer part of the floating number is %d",x);
-    printf("Decimal number after separating is %f",deci);
+    cout<<"Integer part of the floating number is"<<x;
+    cout<<"Decimal number after separating is"<<deci;
     return 0;
 }

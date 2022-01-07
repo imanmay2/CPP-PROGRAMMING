@@ -3,8 +3,8 @@ using namespace std;
 int main()
 {
     int n,ct=1,p=0,r=0;
-    printf("Enter the number");
-    scanf("%d",&n);
+    cout<<"Enter the number you want to enter";
+    cin>>n;
     if (n>0 && n<10)
     {
         printf("NOT A HAPPY NUMBER");
@@ -34,11 +34,11 @@ int main()
         }
         if(p==1)
         {
-            printf("IT IS HAPPY NUMBER");
+            cout<<"........HAPPY NUMBER......";
         }
         else
         {
-            printf("NOT A HAPPY NUMBER");
+            cout<<"Not a happy number";
         }
 
         

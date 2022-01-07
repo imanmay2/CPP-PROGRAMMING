@@ -2,26 +2,29 @@
 using namespace std;
 int main()
 {
-    int x,y,i,j;
-    int s1=0,s2=0;
-    printf("Enter the numbers you want to enter");
-    scanf("%d,%d",&x,&y);
-    for(i=1;i<x;i++){
-        if(x%i==0){
-            s1=s1+i;
+    int n,s=0;
+    cout<<"Enter the number you want to enter";
+    cin>>n;
+    int x=n;
+    while(n!=0)
+    {
+        int r=n%10;
+        int i=1;
+        int f=1;
+        while(i<=r){
+            f=f*i;
+            i=i+1;
         }
+        s=s+f;
+        n=n/10;
+
     }
-    for(j=1;j<y;j++){
-        if (y%j==0)
-        {
-            s2=s2+j;
-        }
-        
-    }
-    if(s1==y && s2==x){
-        printf("Amicable Number");
+    if(s==x)
+    {
+        cout<<".........STORNG NUMBER......";
     }
     else{
-        printf("not amicable number");
+        cout<<"..........NOT A STORNG NUMBER.....";
     }
+    return 0;
 }
