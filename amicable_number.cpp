@@ -1,3 +1,5 @@
+///in amicable number we need to take to input of 2 numbers and if the sum of the factors are equal to the second one and vice versa..then it is a amicable number..
+
 #include<iostream>
 using namespace std;
 int main()

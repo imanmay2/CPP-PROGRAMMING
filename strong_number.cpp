@@ -1,3 +1,4 @@
+///strong number is a number where the sum of the factorial is equal to the original number.///
 #include<iostream>
 using namespace std;
 int main()
