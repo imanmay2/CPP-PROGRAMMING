@@ -2,15 +2,12 @@
 using namespace std;
 int main()
 {
-    int i,j,n;
-    cout<<"Enter the rows of the pattern";
-    cin>>n;
-    for(i=1;i<=n;i++){
-        for(j=1;j<=n;j++){
-            if(i==1 || i==n){
-                cout<<"*";
-            }
-            else if(j==1 || j==n){
+    int i,j,row,col;
+    cout<<"Enter the rows and coloums of the pattern";
+    cin>>row<<col;
+    for(i=1;i<=row;i++){
+        for(j=1;j<=col;j++){
+            if(i==1 || i==row || j==1 || j==col){
                 cout<<"*";
             }
             else{
