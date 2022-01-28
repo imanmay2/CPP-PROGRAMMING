@@ -1,4 +1,4 @@
-///                                                 CALCULATOR///
+///          Write a program which can do the basic arithmetic calculations like +,-,/,*
 #include<iostream>
 using namespace std;
 int main()

@@ -1,3 +1,10 @@
+//Write a program that will give a output like.
+//******
+//******
+//******
+//******
+//******
+//******
 #include<iostream>
 using namespace std;
 int main()

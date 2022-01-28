@@ -1,3 +1,4 @@
+//Write a function in c++ which will calculate the nCr of a given number from the user.
 #include<iostream>
 using namespace std;
 int fact(int n){

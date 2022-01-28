@@ -1,3 +1,4 @@
+//write a program using nCr function which will print the pascal's triangle 
 #include<iostream>
 using namespace std;
 int fact(int n){

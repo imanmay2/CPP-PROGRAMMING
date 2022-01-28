@@ -1,3 +1,4 @@
+//Write a program in c++ which will calculate the factorial by using function.
 #include<iostream>
 using namespace std;
 int fact(int n){

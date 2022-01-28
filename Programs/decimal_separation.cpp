@@ -1,3 +1,4 @@
+//Write a program in c++ which will take a decimal/floating type number as input and just separate the int part and decimal part and print it.
 #include<iostream>
 using namespace std;
 int main()

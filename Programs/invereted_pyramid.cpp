@@ -1,3 +1,8 @@
+//Write a program that will print the inverted pyramid like this.
+//****
+//*** 
+//**  
+//*   
 #include<iostream>
 using namespace std;
 int main()

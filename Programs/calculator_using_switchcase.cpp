@@ -1,3 +1,4 @@
+///Write a program in c++ which will serve the work of calculator using switch case.
 #include<iostream>
 using namespace std;
 int main()

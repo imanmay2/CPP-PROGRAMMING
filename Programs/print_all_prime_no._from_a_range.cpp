@@ -1,3 +1,4 @@
+//print all the prime numbers in between a given range.
 #include<iostream>
 using namespace std;
 int pri(int n){

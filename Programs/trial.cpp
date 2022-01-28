@@ -1,3 +1,4 @@
+//program of trial of the sizeof function
 #include <iostream>
 using namespace std;
 int main(){

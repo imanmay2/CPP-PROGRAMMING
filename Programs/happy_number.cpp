@@ -1,3 +1,4 @@
+//Write a program in c++ which will check whether the entered number will be HAPPY NUMNER or not.
 #include<iostream>
 using namespace std;
 int main()

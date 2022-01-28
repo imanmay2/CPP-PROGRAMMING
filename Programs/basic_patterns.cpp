@@ -1,3 +1,9 @@
+//write a program which will print the basic pattern like this.
+//1
+//22   
+//333  
+//4444 
+//55555
 #include<iostream>
 using namespace std;
 int main()

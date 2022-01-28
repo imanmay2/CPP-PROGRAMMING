@@ -1,3 +1,10 @@
+//Write a program which will print the inverted triangle like this
+ //    *
+ //   **
+ //  ***
+ // ****
+// *****
+//******
 #include<iostream>
 using namespace std;
 int main()

@@ -1,3 +1,4 @@
+// write a program in c++ which will convert the RS to paise.
 #include<iostream>
 using namespace std;
 int main()
