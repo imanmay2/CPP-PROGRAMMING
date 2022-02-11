@@ -1,5 +1,5 @@
 <!-- ![Logo](Programs/cpp.jpg) -->
-<kbd>(cpp.jpg)</kbd>
+<kbd>(Programs/cpp.jpg)</kbd>
 
     
 # C++ PROGRAMMING 
