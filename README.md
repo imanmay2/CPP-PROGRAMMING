@@ -1,9 +1,9 @@
-<!-- ![Logo](Programs/cpp.PNG) -->
-<kbd>(Programs/cpp.PNG)</kbd>
+<!-- ![Logo](Programs/cpp.jpg) -->
+<kbd>(Programs/cpp.jpg)</kbd>
 
     
 # C++ PROGRAMMING 
-- THIS IS A C++ REPOSITERY WHERE YOU CAN FIND VARIOUS TYPE OF PROGRAMS
+- THIS IS A C++ REPOSITORY WHERE YOU CAN FIND VARIOUS TYPE OF PROGRAMS
 
 
 # Authors
