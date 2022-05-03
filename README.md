@@ -19,7 +19,7 @@
 
 
 ## 🚀 About Me
-Hi, I am Manmay Chakraborty who is currently building up projects such as games,webpages,etc...on this repository.
+Hi, I am Manmay Chakraborty who is currently practising C++ on this repository.
 
 
 
