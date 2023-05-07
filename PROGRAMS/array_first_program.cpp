@@ -6,7 +6,7 @@ int main()
     int n;
     cout<<"ENTER THE SIZE OF THE ARRAY";
     cin>>n;
-    int array[n];
+    int array[];
     for(int i=0;i<n;i++)
     {
         cout<<"ENTER THE NUMBER YOU WANNA INSERT IN YOUR ARRAY";
