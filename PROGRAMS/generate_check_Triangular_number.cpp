@@ -18,20 +18,14 @@ int check_Triangular(int num){
 int generate_Triangular(int n){
     cout<<"Triangular number are : ";
     for(int i=1;i<=n;i++){
-        cout<<(0.5*(n)*(n+1))<<endl;
+        cout<<(0.5*(i)*(i+1))<<endl;
     }
 }
 
 int main()
 {
-    int num,n;
-    cout<<"Enter a number to check whether it is a triangular number or not";
-    cin>>num;
-    if(check_Triangular(num)==1)
-    cout<<'Number is Triangular';
-    else
-    cout<<'Number is not Triangular';
-    cout<<'Enter the range for generating the triangular series';
+    int n;
+    cout<<"Enter the range for generating the triangular series : ";
     cin>>n;
     generate_Triangular(n);
     return 0;
