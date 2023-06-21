@@ -8,3 +8,21 @@
 6. decimal to hexadecimal
 7. ADD 2 BINARY NUMBERS
 */
+
+
+
+#include<iostream>
+using namespace std;
+
+string rev(string s){
+    
+}
+int bin_deci(string bin){
+    int s=0,k=0;
+    for(int i=0;i<bin.size();i++){
+
+    }
+}
+int main(){
+    return 0;
+}
