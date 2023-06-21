@@ -12,17 +12,31 @@
 
 
 #include<iostream>
+#include<math.h>
 using namespace std;
 
 string rev(string s){
-    
+    // FUNCTION FOR REVERSING THE STRING
+    string s1;
+    for(int i=s.size();i>-1;i++){
+        s1=s1+s[i];
+    }
+    return s1;
 }
 int bin_deci(string bin){
-    int s=0,k=0;
-    for(int i=0;i<bin.size();i++){
-
+    int s=0;
+    string s1;
+    s1=rev(bin);
+    for(int i=0;i<s1.size();i++){
+        s=s+(pow(2,i)*int(s1[i]));
     }
+    return s;
+    
 }
 int main(){
+    string s;
+    cout<<"binary to decimal : ";
+    cin>>s;
+    cout<<"the binary to0 decimal conversion is : "<<bin_deci(s)<<endl;
     return 0;
 }
