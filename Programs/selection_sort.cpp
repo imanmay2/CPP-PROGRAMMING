@@ -28,3 +28,17 @@ int main()
         cout<<arr[y]<<" ";
     }
 }
+
+
+
+
+// BRAIN TEASER : 
+/*
+You have 15 rupees in your hand to buy chocolates, 1 Rs = 1 chocoloate , and also 3 wrappers = 1 chocoloate ...
+So, what is the maximum number of chocolates , you can buy ?
+
+Ans : 15 Rs= 15 Chocolates , thn 15/3 = 5 chocolates extra(bcz of wrappers), now 5-3=2 .....3 wrappers are used to buy one more chocolates
+, so remaining 2 chocolates + 1 chocolate (from wrapper),,,, we have total 3 chocolates , again from 3 wrappers , we got , 1 chocolates ,
+
+So in total : 15+5+1+1= 22 chocolates in total ......
+*/
