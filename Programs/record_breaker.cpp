@@ -5,8 +5,8 @@
 // the number of visitors on that day is strictly larger than the number 
 // of visitors on each of the previous days.
 // Either it is the last day, or the number of visitors on the day is strictly larger than the number of visitors 
-// on the followijg day.
-// NOTE : every first dat could be record breaking days.
+// on the following day.
+// NOTE : every first day could be record breaking days.
 
 
 
@@ -15,7 +15,7 @@
 #include<iostream>
 #include<climits>
 using namespace std;
-int maxi(int arr,int n){
+int maxi(int n,int arr[n]){
     int maxx=INT_MIN;
     for(int i=0;i<n;i++){
         maxx=max(arr[i],maxx);
@@ -43,13 +43,13 @@ int main()
             }
         }
         else if(i==n-1){
-            max=maxi(arr,i-1);
+            max=maxi(i-1,arr[n]);
             if(max<arr[i]){
                 cout<<arr[i]<<endl;
                 }
             }
         else{
-            max=maxi(arr,i-1);
+            max=maxi(i-1,arr[n]);
             if(max<arr[i] && arr[i]>arr[i+1])
             cout<<arr[i]<<endl;
             }
