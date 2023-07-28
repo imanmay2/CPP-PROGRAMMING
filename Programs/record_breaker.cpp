@@ -12,51 +12,5 @@
 
 
 
-#include<iostream>
-#include<climits>
-using namespace std;
-int maxi(int n,int arr[n]){
-    int maxx=INT_MIN;
-    for(int i=0;i<n;i++){
-        maxx=max(arr[i],maxx);
-    }
-    return maxx;
-}
-int main()
-{
-    int n;
-    cout<<"Enter the size of the array : ";
-    cin>>n;
-    int arr[n];
-    for(int i=0;i<n;i++){
-        cout<<"Enter the elements : ";
-        cin>>arr[i];
-    }
-    
-    // main code starts here.
-    int max;
-    cout<<"Record Breaking days are : ";
-    for(int i=0;i<n;i++){
-        if(i==0){
-            if(arr[i]>arr[i+1]){
-                cout<<arr[i]<<endl;
-            }
-        }
-        else if(i==n-1){
-            max=maxi(i-1,arr[n]);
-            if(max<arr[i]){
-                cout<<arr[i]<<endl;
-                }
-            }
-        else{
-            max=maxi(i-1,arr[n]);
-            if(max<arr[i] && arr[i]>arr[i+1])
-            cout<<arr[i]<<endl;
-            }
-            
-        }
-
-    }
-
 
 
