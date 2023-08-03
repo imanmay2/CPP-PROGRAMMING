@@ -12,5 +12,57 @@
 
 
 
+#include<iostream>
+#include<climits>
+using namespace std;
 
+
+// function for printing the maximum element from the subarray.
+int n,a[n];
+int f_max(int n,int a[n]){
+    int mx=INT_MIN;
+    for(int i=0;i<n;i++)
+    {
+        mx=max(mx,a[i]);
+    }
+    return mx;
+}
+
+
+
+int main(){
+    int n;
+    cout<<"Enter the size of the array : ";
+    cin>>n;
+    int a[n];
+    for(int i=0;i<n;i++)
+    {// inserting elements into the array 
+        cout<<"Enter the element : ";
+        cin>>a[i];
+    }
+
+
+
+// finding the max element from array.
+int mx=INT_MIN;
+int indx=0;
+for(int j=0;j<n;j++){
+    mx=max(mx,a[j]);
+}
+
+
+//traversing the array.
+int ct=0,k=0;
+while(a[k]!=mx){
+    if(k==0 && a[k]>a[k+1]){
+        cout<<a[k]<<" IS A RECORD BREAKING DAY."<<endl;
+        int maxi=a[k];
+    }
+    else if(a[k]>a[k+1] && a[k]>f_max(k,a[k])){
+        cout<<a[k]<<"IS THE RECORD BREAKING DAY."<<endl;
+    }
+
+}
+return 0;
+}
 
