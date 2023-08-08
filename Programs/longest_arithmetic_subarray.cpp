@@ -1,5 +1,6 @@
 // longest arithmetic subarray.
 // e.g : [10,7,4,6,8,10,11]
+//       sub-array :[2,4,6,8] 
 //       output should be 4.
 
 #include<iostream>
