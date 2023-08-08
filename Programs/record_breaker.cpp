@@ -18,14 +18,13 @@ using namespace std;
 
 
 // function for printing the maximum element from the subarray.
-int n,a[n];
-int f_max(int n,int a[n]){
-    int mx=INT_MIN;
-    for(int i=0;i<n;i++)
+int f_max(int num,int a[num]){
+    int maxi=INT_MIN;
+    for(int i=0;i<num;i++)
     {
-        mx=max(mx,a[i]);
+        maxi=max(mx,a[i]);
     }
-    return mx;
+    return maxi;
 }
 
 
