@@ -20,7 +20,6 @@ int main(){
 
     // main code of arithmetic algorithm starts here.
 
-    //traversing the array.
-
+    
     
 }
