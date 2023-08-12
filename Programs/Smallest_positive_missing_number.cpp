@@ -33,9 +33,14 @@ int main(){
             p=arr[j];
         }
         else if(arr[j]>0 and p!=arr[j] and p!=-1){
-            cout<<"Smallest positive missing number : "<<arr[j]-p;
-            f=1;
-            break;
+            if(arr[j]==p+1){
+                p=arr[j];
+            }
+            else if(arr[j]!=p+1){
+                cout<<"Smallest positive missing number : "<<p+1;
+                f=1;
+                break;
+            }
         }
     }
     if(f==0){
