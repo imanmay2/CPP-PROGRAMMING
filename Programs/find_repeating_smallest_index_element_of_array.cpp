@@ -15,8 +15,6 @@ int main(){
         cout<<"Enter the element : ";
         cin>>arr[i];
     }
-
-
-    //main algotithm starts here.
-    
+    int li[n];
+    //main algorithm starts here.
 }
