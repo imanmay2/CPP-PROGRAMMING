@@ -28,7 +28,7 @@ int main(){
     //traversing the array.
     for(int i=0;i<n;i++){
         int s=0;
-        for(int j=0;j<i;j++){
+        for(int j=i;j<i;j++){
             s=s+arr[j];
             if(S==s){
                 cout<<"SUM MATCHED !!\n";
