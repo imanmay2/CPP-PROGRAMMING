@@ -4,17 +4,3 @@
 //	 output : 2               (FACEBOOK , AMAZON )
 
 
-#include<iostream>
-using namespace std;
-int main(){
-    int n;
-    cout<<"Enter the range : ";
-    cin>>n;
-    int arr[n];
-    for(int i=0;i<n;i++){
-        cout<<"Enter the element : ";
-        cin>>arr[i];
-    }
-    int li[n];
-    //main algorithm starts here.
-}
