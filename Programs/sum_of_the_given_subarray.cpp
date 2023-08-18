@@ -31,7 +31,7 @@ int main(){
         for(int j=i;j<n;j++){
             s=s+arr[j];
             if(S==s){
-                cout<<"SUM MATCHED !!\n";
+                
                 cout<<i<<j;
                 f=1;
                 break;
