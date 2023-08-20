@@ -22,17 +22,16 @@ int main(){
         cin>>arr[i];
     }
 
-    int S;
+    int sum;
     cout<<"Enter the sum : ";
-    cin>>S;
+    cin>>sum;
     //traversing the array.
     for(int i=0;i<n;i++){
         int s=0;
         for(int j=i;j<n;j++){
             s=s+arr[j];
-            if(S==s){
-                
-                cout<<i<<j;
+            if(s==sum){
+                cout<<i<<" "<<j;
                 f=1;
                 break;
             }
