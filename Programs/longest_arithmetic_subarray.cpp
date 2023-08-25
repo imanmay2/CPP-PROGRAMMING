@@ -17,7 +17,6 @@ int main()
         cout<<"Enter the element : ";
         cin>>arr[i];
     }
-
     //traversing the array.
     int diff[n];
     for(int i=0;i<n-1;i++){
@@ -29,15 +28,7 @@ int main()
         else if(d>0){
             diff[i]=d;
         }
-        
-         
     }
-
-    // cout<<"Difference list is as follows : ";
-    // for(int j=0;j<n-1;j++){
-    //     cout<<diff[j]<<" ";
-    // }
-
 
     //traversing from the difference array and finding the most repeating element from that array.
     int ct_d1[n];
@@ -57,7 +48,6 @@ int main()
     for(int j=0;j<n;j++){
         max_no=max(max_no,ct_d1[j]);
     }
-    
     cout<<"The most repeating  difference consecutive elements is : "<<max_no+1<<endl;
     return 0;
 }
