@@ -5,6 +5,7 @@
 // exclude the condition for 0.(it means , if the difference between the number is 0 , then skip that).
 
 #include<iostream>
+#include<climits>
 using namespace std;
 int main()
 {
@@ -37,5 +38,26 @@ int main()
     //     cout<<diff[j]<<" ";
     // }
 
+
+    //traversing from the difference array and finding the most repeating element from that array.
+    int ct_d1[n];
+    for(int i=0;i<n;i++){
+        int ct=0;
+        for(int j=0;j<n;j++){
+            if(diff[j]==diff[i]){
+                ct++;
+            }
+        } 
+        ct_d1[i]=ct;     
+    }
+
+    //finding the max from the ct_d1 array.
+    int max_no,min_no;
+    max_no=INT_MIN;
+    for(int j=0;j<n;j++){
+        max_no=max(max_no,ct_d1[j]);
+    }
+    
+    cout<<"The most repeating  difference consecutive elements is : "<<max_no+1<<endl;
     return 0;
 }
