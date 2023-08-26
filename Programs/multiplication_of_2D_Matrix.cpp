@@ -10,7 +10,7 @@ int main(){
     cout<<"Enter the row and coloumn for Matrix2 : ";
     cin>>c>>d;
     if(b!=c){
-        cout<<"Error, Matrix Mulyiplication cannot be done due to the improper values of rows and column.";
+        cout<<"Error, Matrix Multiplication cannot be done due to the improper values of rows and column.";
     }
     
 }
