@@ -31,10 +31,16 @@ int main(){
         for(int j=i;j<n;j++){
             s=s+arr[j];
             if(s==sum){
-                cout<<i<<" "<<j;
+                cout<<i+1<<" "<<j+1;
                 f=1;
                 break;
             }
+            else if(s>sum){
+                break;
+            }
+        }
+        if(f==1){
+            break;
         }
     }
     if(f==0){
