@@ -15,8 +15,6 @@
 #include<iostream>
 #include<climits>
 using namespace std;
-
-
 // function for printing the maximum element from the subarray.
 int f_max(int num,int a[]){
     int maxi=INT_MIN;
@@ -26,9 +24,6 @@ int f_max(int num,int a[]){
     }
     return maxi;
 }
-
-
-
 int main(){
     int n;
     cout<<"Enter the size of the array : ";
@@ -40,8 +35,6 @@ int main(){
         cin>>a[i];
     }
 
-
-
 // finding the max element from array.
 int mx=INT_MIN;
 int indx=0;
@@ -50,7 +43,7 @@ for(int j=0;j<n;j++){
 }
 
 //traversing the array.
-int ct=0,k=0;
+int ct=0,k=-1;
 while(a[k]!=mx){
     k++;
     if(k==0 && a[k]>a[k+1]){
@@ -67,9 +60,8 @@ while(a[k]!=mx){
         cout<<a[k]<<" IS THE RECORD BREAKING DAY."<<endl;
         ct=1;
     }
-    
-
 }
+
 if(ct==0){
     cout<<"NO RECORD BRAKING  DAY IN THE GIVEN LIST.";
 }
