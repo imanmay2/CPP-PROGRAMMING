@@ -15,8 +15,8 @@ int main(){
         cin>>arr[i];
     }
     // traversing the array.
-    int ct=0;
     for(int i=0;i<n;i++){
+        int ct=0;
         for(int j=i;j<n;j++){
             if(arr[i]==arr[j]){
                 ct++;
@@ -26,6 +26,9 @@ int main(){
             }
         }
         
+        }
+        if(ct==2){
+            break;
         }
     }
     return 0;
