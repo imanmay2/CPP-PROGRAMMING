@@ -14,9 +14,6 @@ int main(){
         cout<<"Enter the element : ";
         cin>>arr[i];
     }
-
-
-
     // traversing the array.
     int ct=0;
     for(int i=0;i<n;i++){
