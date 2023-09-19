@@ -1,5 +1,5 @@
 // WAP THAT WILL ACCEPT A STRING FROM THE USER AND DISPLAY BOTH THE UPPERCASE AND LOWERCASE .
-
+// using function
 
 #include<iostream>
 #include<string>
