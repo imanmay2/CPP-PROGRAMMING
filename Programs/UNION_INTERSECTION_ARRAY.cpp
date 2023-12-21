@@ -63,8 +63,6 @@ int main(){
         }
     }
 
-    int k=sizeof(arr_u)/sizeof(arr_u[0]);
-    cout<<k;
 
 
 }
