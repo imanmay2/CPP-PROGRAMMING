@@ -63,6 +63,15 @@ int main(){
         }
     }
 
+    int v=sizeof(arr_u)/sizeof(arr_u[0]);    // checking the no. of elements in the arr_u 
+
+
+    //let's see the union array.
+    cout<<"UNION ELEMENTS -------- "<<endl;
+    for(int i=0;i<v;i++){
+        cout<<"**"<<arr_u[i]<<"**"<<endl;
+    }
+    
 
 
 }
