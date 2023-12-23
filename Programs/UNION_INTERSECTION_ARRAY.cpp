@@ -69,7 +69,7 @@ int main(){
     //let's see the union array.
     cout<<"UNION ELEMENTS -------- "<<endl;
     for(int i=0;i<v;i++){
-        cout<<"**"<<arr_u[i]<<"**"<<endl;
+        cout<<"** "<<arr_u[i]<<" **"<<endl;
     }
     
 
