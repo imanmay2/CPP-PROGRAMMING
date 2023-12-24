@@ -13,7 +13,6 @@ int main(){
     for(int j=0;j<n;j++){
         cout<<arr[j]<<endl;
     }
-
     int a;
     cout<<"Enter the number to be changed : ";
     cin>>a;
