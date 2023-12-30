@@ -5,3 +5,4 @@
  //        The functions should put all 0s first, then all 1s and all 2s in last.
  // 5. Count pairs with the given sum.
  // 6. Move all the -ve elements on the left side of the array.
+ // 7. CREATE A STACK OPERATION OF ARRAY IN C++.
