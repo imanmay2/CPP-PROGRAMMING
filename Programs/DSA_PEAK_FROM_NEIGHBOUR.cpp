@@ -21,4 +21,20 @@ int main(){
         cout<<"Enter the number : "<<endl;
         cin>>arr[i];
     }
+
+    for(int i=0;i<n;i++){
+        if(i==0 && arr[i]>arr[i+1]){
+            cout<<"Peak Element Found !!"<<"\n";
+            cout<<arr[i]<<"\n";
+        }
+        if(i==n-1 && arr[n-1]>arr[n-2]){
+            cout<<"Peak Element Found!!!"<<'\n';
+            cout<<arr[i]<<'\n';
+        }
+        if(i!=0 && i!=n-1 && arr[i]>arr[i+1] && arr[i]>arr[i-1]){
+            cout<<"Peak Element Found!!!"<<'\n';
+            cout<<arr[i]<<'\n';
+        }
+    }
+    return 0;
 }
