@@ -19,7 +19,7 @@ int main(){
                 ct++;
             }
         }
-        // logic needed here//
+        // logic needed here/
     }
     // for(int i=0;i<26;i++){
     //     cout<<arr[i]<<endl;
