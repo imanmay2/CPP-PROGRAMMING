@@ -1,16 +1,24 @@
 #include<iostream>
+#include<string.h>
 using namespace std;
 class Student{
+    // Student(string username){
+    //     cout<<"Welcome\n"<<username;
+    // }
     public: 
     int roll;
-    char name[20];
+    string name;
     
 
     public:
+    Student(string username){
+        cout<<"Welcome "<<username;
+    }
+    
     void getData(){
-        cout<<"Enter roll";
+        cout<<"Enter roll: ";
         cin>>roll;
-        cout<<"Enter name";
+        cout<<"Enter name: ";
         cin>>name;
     }
 
@@ -23,7 +31,7 @@ class Student{
 
 int main(){
     cout<<"Hello C++\n";
-    Student s1;
+    Student s1=Student("imanmay2");// Explicity
     s1.getData();
     s1.roll=12;
     s1.putData();
