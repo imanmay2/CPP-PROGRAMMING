@@ -1,5 +1,6 @@
 #include<iostream>
-#include<string.h>
+#include<string>
+#include<iomanip>
 using namespace std;
 class Student{
     // Student(string username){
@@ -30,9 +31,7 @@ class Student{
 };
 
 int main(){
-    cout<<"Hello C++\n";
-    Student s1=Student("imanmay2");// Explicity
-    s1.getData();
-    s1.roll=12;
-    s1.putData();
+    
+    float num=5.6787;
+    cout<<fixed<<setprecision(2)<<num;
 }
