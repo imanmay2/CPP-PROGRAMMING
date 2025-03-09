@@ -1,18 +1,19 @@
 #include<iostream>
 using namespace std;
 class staticTest{
+    public:
     static int x;
     staticTest(){
         cout<<"Constructor is called."<<endl;
     }
-
-    //Destructor.
     ~staticTest(){
         cout<<"Destructor is called."<<endl;
     }
 };
-
-int staticTest::x=2; // Setting the static variable to 2.
+int staticTest::x=2;
 int main(){
-    cout<<"Accessing the static variable : "<<staticTest::x<<endl;
+    staticTest s1;
+    cout<<"Value of the static variable is : "<<staticTest::x<<endl;
+
+    return 0;
 }
