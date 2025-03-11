@@ -2,6 +2,7 @@
 #include<string>
 using namespace std;
 
+
 void toggleCase(string &str){
     for(int i=0;i<str.length();i++){
         if(str[i]>='A' && str[i]<='Z'){
@@ -11,6 +12,7 @@ void toggleCase(string &str){
         }
     }
 }
+
 
 int main(){
     string str;
