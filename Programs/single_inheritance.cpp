@@ -1,47 +1,46 @@
+// Testing the single-inheritance. 
+
 #include<iostream>
 #include<string>
 using namespace std;
 
-class Person{      //base class
-    protected:
+class Person{
+    protected: 
     string name;
     int age;
 
     public:
-    void setPerson(string name_,int age_){
-        cout<<"Enter name : ";
-        cin>>name_;
-        name=name_;
-        cout<<"Enter age : ";
-        cin>>age_;
-        age=age_;
+    Person(string name,int age){
+        this->name=name;
+        this->age=age;
     }
 };
 
 class Employee:public Person{
-    private:
-    int id;
-    double salary;
-
     public:
-    
-    Employee(int id_,double salary_){
-        id=id_;
-        salary=salary_;
+    int emp_id;
+    Employee(string name,int age,int emp_id):Person(name,age){
+        this->emp_id=emp_id;
     }
 
-    void displayEmployeeDetails(){
-        cout<<"Name of the Employee : "<<name<<endl;
-        cout<<"Age of the Employee : "<<age<<endl;
-        cout<<"Salary of the Employee : "<< salary<<endl;
-        cout<<"Employee ID is : "<<id;
+
+    void displayDetails(){
+        cout<<"Employee Name: "<<name<<endl;
+        cout<<"Employee Age: "<<age<<endl;
+        cout<<"Employee ID: "<<emp_id<<endl;
     }
-}
+};
 
 int main(){
-    Person p1;
     string name;
-    cout<<"Name : ";
-    cin>>name;
-    
+    int age,id;
+    cout<<"Enter Employee Name: ";
+    getline(cin,name);
+    cout<<"Enter Employee Age: ";
+    cin>>age;
+    cout<<"Enter Employee id: ";
+    cin>>id;
+    Employee e1(name,age,id);
+
+    e1.displayDetails();
 }
