@@ -4,6 +4,7 @@
 #include<string>
 using namespace std;
 
+
 class Person{
     protected: 
     string name;
@@ -15,6 +16,7 @@ class Person{
         this->age=age;
     }
 };
+
 
 class Employee:public Person{
     public:
@@ -31,6 +33,7 @@ class Employee:public Person{
     }
 };
 
+
 int main(){
     string name;
     int age,id;
@@ -41,6 +44,5 @@ int main(){
     cout<<"Enter Employee id: ";
     cin>>id;
     Employee e1(name,age,id);
-
     e1.displayDetails();
 }
