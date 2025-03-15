@@ -1,12 +1,8 @@
-// Testing the single-inheritance. 
-
 #include<iostream>
 #include<string>
 using namespace std;
-
-
 class Person{
-    protected: 
+    protected:
     string name;
     int age;
 
@@ -17,32 +13,31 @@ class Person{
     }
 };
 
-
 class Employee:public Person{
     public:
-    int emp_id;
-    Employee(string name,int age,int emp_id):Person(name,age){
+    string emp_id;
+    Employee(string emp_id,string name,int age):Person(name,age){
         this->emp_id=emp_id;
     }
 
-
     void displayDetails(){
-        cout<<"Employee Name: "<<name<<endl;
-        cout<<"Employee Age: "<<age<<endl;
-        cout<<"Employee ID: "<<emp_id<<endl;
+        cout<<"Employee ID : "<<emp_id<<endl;
+        cout<<"Employee Name : "<<name<<endl;
+        cout<<"Employee Age : "<<age;
     }
 };
 
 
 int main(){
-    string name;
-    int age,id;
-    cout<<"Enter Employee Name: ";
+    string name,emp_id;
+    int age;
+    cout<<"Enter employee ID : ";
+    getline(cin,emp_id);
+    cout<<"Enter employee name : ";
     getline(cin,name);
-    cout<<"Enter Employee Age: ";
+    cout<<"Enter the Employee's age : ";
     cin>>age;
-    cout<<"Enter Employee id: ";
-    cin>>id;
-    Employee e1(name,age,id);
+
+    Employee e1(emp_id,name,age);
     e1.displayDetails();
 }
