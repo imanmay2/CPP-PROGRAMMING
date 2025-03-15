@@ -1,0 +1,50 @@
+1X8 demux into 1X2 demux. Writing the verilog HDL code for the same.
+
+=>
+module 1X2_demux(input in,input sel,output out0,output out1);
+assign out0=(~sel)?in:0;
+assign out1=(sel)?in:0;
+endmodule
+
+
+module 1X8_demux(input in,input [2:0]sel,output [7:0]out);
+wire w1,w2,w3,w4,w5,w6;
+
+//first stage
+1X2_demux d1(in,sel[2],w1,w2);
+
+//2nd stage
+1X2_demux d2(w1,sel[1],w3,w4);
+1X2_demux d3(w2,sel[1],w5,w6);
+
+//3rd stage
+1X2_demux d4(w3,sel[0],out[0],out[1]);
+1X2_demux d5(w4,sel[0],out[2],out[3]);
+1X2_demux d6(w5,sel[0],out[4],out[5]);
+1X2_demux d7(w6,sel[0],out[6],out[7]);
+endmodule
+
+
+
+//Writng verilog code for 1X16 demux using 1X4 demux;
+module 1X4_demux(input in,int sel[1:0],output [3:0]);
+assign out[0]=(sel==2'b00)?in:1'b0;
+assign out[1]=(sel==2'b01)?in:1'b0;
+assign out[2]=(sel==2'b10)?in:1'b0;
+assign out[3]=(sel==2'b11)?in:1'b0;
+endmodule;
+
+module 1X16_demux(input in,input [3:0]sel,output [15:0]out);
+wire w1,w2,w3,w4;
+
+
+//1st stage
+1X4_demux d1(in,sel[3:2],w1,w2,w3,w4);
+
+
+//2nd stage 
+1X16_demux d2(w1,sel[1:0],out[0],out[1],out[2],out[3]);
+1X16_demux d3(w2,sel[1:0],out[4],out[5],out[6],out[7]);
+1X16_demux d4(w3,sel[1:0],out[8],out[9],out[10],out[11]);
+1X16_demux d5(w4,sel[1:0],out[12],out[13],out[14],out[15]);
+endmodule
