@@ -13,12 +13,12 @@
 // C B C B H C B C B H
 // C B C B H C B C B H
 // C B C B H C B C B H
-// C B C B H.
-// Total Cars: 25
+// C B C B H C B C B H
+// Total Cars: 20
 
 // Total Bikes: 20
 
-// Total Heavy Vehicles: 5
+// Total Heavy Vehicles: 10
 #include<iostream>
 #include<string>
 using namespace std;
@@ -31,6 +31,7 @@ int main(){
     for(int i=1;i<=n;i++){
         if(i%10==0){
             cout<<"H ";
+            ct_h++;
             cout<<endl;
         }
         else if(i%5==0){
@@ -47,5 +48,4 @@ int main(){
     cout<<"Total Cars : "<<ct_c<<endl;
     cout<<"Total Bikes : "<<ct_b<<endl;
     cout<<"Total Heavy Vehicles: "<<ct_h<<endl;
-    
 }
