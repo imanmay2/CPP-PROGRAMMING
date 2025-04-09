@@ -24,6 +24,7 @@ int main(){
     Derived d;
     b=&d;
     b->print();// Late binding
-    // d.print();
-    
+    // d.print(); 
 }
+
+
