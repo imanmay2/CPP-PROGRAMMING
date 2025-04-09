@@ -5,6 +5,7 @@ class Base{
     public:
 
     virtual void print()=0;  //pure virtual function.
+    virtual ~Base(){}
 };
 class Derived:public Base{
     public:
