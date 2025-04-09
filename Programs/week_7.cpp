@@ -57,7 +57,7 @@ int main(){
     char type;
 
     cout<<"Enter the name: ";
-    cin.ignore();
+    
     getline(cin,name);
 
     cout<<"Enter Roll: ";
