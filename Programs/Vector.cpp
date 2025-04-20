@@ -1,4 +1,5 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 
 void display(vector<int> arr,int size){
@@ -17,7 +18,4 @@ int main(){
         cout<<*i<<" ";
     }
     cout<<endl;
-
-
-    
 }
