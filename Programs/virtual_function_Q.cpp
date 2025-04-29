@@ -14,7 +14,6 @@ class Student{
         cout<<"Enter roll: ";
         cin>>roll;
     }
-
     virtual ~Student(){}
 };
 
