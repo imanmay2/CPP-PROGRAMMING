@@ -1,29 +1,29 @@
-// #include<iostream>
-// using namespace std;
+#include<iostream>
+using namespace std;
 
-// class Test{
-//     private:
-//     int num;
+class Test{
+    private:
+    int num;
 
-//     public:
-//     Test(int num){
-//         this->num=num;
-//     }
+    public:
+    Test(int num){
+        this->num=num;
+    }
 
-//     void operator ++(){
-//         num=num+2;
-//     }
+    void operator ++(){
+        num=num+2;
+    }
 
-//     void display(){
-//         cout<<"Number increment to : "<<num;
-//     }
-// };
+    void display(){
+        cout<<"Number increment to : "<<num;
+    }
+};
 
-// int main(){
-//     Test t1(6);
-//     ++t1;
-//     t1.display();
-// }
+int main(){
+    Test t1(6);
+    ++t1;
+    t1.display();
+}
 
 
 #include<iostream>
@@ -51,3 +51,5 @@ int main(){
     obj3=obj1+obj2;
     obj3.display();
 }
+
+
