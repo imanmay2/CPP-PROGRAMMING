@@ -10,7 +10,6 @@ class Num{
         this->num1=num1;
         this->num2=num2;
     }
-
     T getMaxVal();
 };
 
