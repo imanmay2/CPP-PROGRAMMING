@@ -17,14 +17,9 @@ class Shape{
 };
 
 class Rectangle:public Shape{
-    protected:
-    double length,width;
 
     public:
-    Rectangle(double length,double width):Shape(length,width){
-        this->length=length;
-        this->width=width;
-    }
+    Rectangle(double length,double width):Shape(length,width){}
 
     void calculateArea(){
         cout<<"Area of the Rectangle : "<<length*width<<endl;
@@ -34,12 +29,10 @@ class Rectangle:public Shape{
 
 class Cuboid:public Rectangle{
     protected:
-    double length,width,height;
+    double height;
 
     public:
     Cuboid(double length,double width,double height):Rectangle(length,width){
-        this->length=length;
-        this->width=width;
         this->height=height;
     }
 
